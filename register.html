@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div class="headder-top">
+        <div class="width1200 headder-top-content">
+            <div>欢迎来到雾霾气象局！ 请<a href="login.html" class="font-aqua">登录</a> <a href="register.html" class="font-aqua">快速注册 </a>
+            </div>
+        </div>
+    </div>
+
+     <div class="lay_background" id="lay_bg" style="width:auto;height: auto;">
+        <img class="lay_background_img lay_background_img_fade_out" id="lay_bg_img" alt="" src="./images/20171122191532_f2975b.jpg" style="width: 1536px; height: 1023px; top: -130px;">
+
+    </div>
+    <ul class="content width1200">
+        <ul class="wumai-logo">
+           <div>
+                <img src="./images/logo.png" alt="">
+            </div>
+           <li>
+                欢迎注册
+            </li>
+        </ul>
+        <h2 class="title">雾霾气象局</h2>
+        <ul class="main">
+            <ul class="input">
+            	<li>
+                    <input class="user_name" type="text" placeholder="请输入姓名">
+                </li>
+                <li>
+                    <input class="user_ph" type="text" placeholder="请输入手机号">
+                </li>
+                <li>
+                    <input type="text" name="imgcode" class="input-code" placeholder="请输入验证码">
+                </li>
+                <li>
+                	<img  class="code" src="./images/" />
+                </li>
+                <li>
+                    <div id="province"></div>
+                    <script type="text/javascript" src="http://lib.h-ui.net/jquery/1.9.1/jquery.min.js"></script>
+                    <script type="text/javascript" src="./js/jquery.provincesCity.js"></script>
+                    <script type="text/javascript" src="./js/provincesData.js"></script>
+                    <script type="text/javascript">
+                    /*调用插件*/
+                    $(function(){
+                        $("#province").ProvinceCity();
+                    });
+                    </script>
+                   
+                </li>
+                <li>
+                    <input class="user_pw" type="text" placeholder="请设置密码">
+                </li>
+                <li>
+                    <p class="login-btn font-aqua nowregister">立即注册</p>
+                </li>
+            </ul>
+            <ul class="register">
+                <li>
+                <img src="./images/OIP.jpg" alt="">
+             </li>
+                <li>已有帐号</li>
+                <li class="login-btn font-aqua"><a href="login.html">立即登录</a></li>
+            
+            </ul>
+        </ul>
+    </ul>
+    <footer class="footer mt-20">
+        <div class="container-fluid">
+            <nav> <a href="#" target="_blank">关于我们</a> <span class="pipe">|</span> <a href="#" target="_blank">联系我们</a> <span class="pipe">|</span> <a href="#" target="_blank">法律声明</a> </nav>
+            <p>Copyright &copy;2016 H-ui.net All Rights Reserved. <br>
+                <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+            </p>
+        </div>
+    </footer>   
+
+</body>
+</html>
